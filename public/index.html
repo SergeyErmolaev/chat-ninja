@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body class="font-body text-chat">
+  <div ><!--Contant wrapper-->
+    <div class="flex">
+      <div class="flex-none hidden md:block" id="firstCol"><!--first col-->
+        <div class=" hidden md:hidden p-4 cursor-pointer" id="crossedBar">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </div>
+        <nav class="text-service bg-accent w-navItem">
+          <ul>
+            <li class="flex items-center justify-center h-28 text-white">
+              <a href="#">
+                <img src="./img/Logo.svg" alt="logo" class="mx-auto">
+                <p class="text-transparent text-0">Logo</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Grid.png" alt="grid" class="mx-auto mb-4">
+                <p class="text-center leading-5">Dashboard</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="px-nav block pt-10 pb-navIB">
+                <img src="./img/Cart.png" alt="cart" class="mx-auto mb-4">
+                <p class="text-center leading-5">E-Commerce</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Calendar.png" alt="calendar"class="mx-auto mb-4">
+                <p class="text-center leading-5">Calendar</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB relative">
+                <img src="./img/Mail.png" alt="mail" class="mx-auto mb-4">
+                <p class="text-center leading-5">Mail</p>
+                <div class="absolute badge badge-nav-position">
+                  <span>4</span>
+                </div>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB bg-opacity-15 bg-black shadow-innerNav">
+                <img src="./img/Chat.png" alt="chat"class="mx-auto mb-4">
+                <p class="text-center leading-5">Chat</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Tasks.png" alt="tasks"class="mx-auto mb-4">
+                <p class="text-center leading-5">Tasks</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Project.png" alt="tasks"class="mx-auto mb-4">
+                <p class="text-center leading-5">Project</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Folder.png" alt="tasks"class="mx-auto mb-4">
+                <p class="text-center leading-5">File Manager</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Text.png" alt="tasks"class="mx-auto mb-4">
+                <p class="text-center leading-5">Notes</p>
+              </a>
+            </li>
+            <li class="text-white">
+              <a href="#" class="block pt-10 pb-navIB">
+                <img src="./img/Contacts.png" alt="tasks"class="mx-auto mb-4">
+                <p class="text-center leading-5">Contacts</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block h-scroll pt-scrollP fixed bottom-0 left-0 w-navItem z-10 bg-accent">
+                <img src="./img/Scrolls.png" alt="scrolls" class="mx-auto mb-4">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex-none hidden md:block lg:w-roster border-r border-borderColor" id="secondCol"><!--second col-->
+        <div class="relative border-b border-borderColor h-20"><!--Search-->
+          <img src="./img/Search.png" alt="search" class="absolute search">
+          <input type="search" placeholder="Search..." class="pl-13 h-full w-full">
+        </div>
+        <div><!--Teams-->
+          <div class="flex justify-between pl-6 pr-5 h-rosterHeader">
+            <h3 class="uppercase text-bodyLight pt-5">Teams</h3>
+            <div class="cursor-pointer pt-5 -mr-px">
+              <img src="./img/Plus.png" alt="plus">
+            </div>
+          </div>
+          <div class="p-6 flex border-b border-borderColor h-25">
+            <div>
+              <img src="./img/8.png" alt="managers">
+              <span class="online-dot hidden"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">#Managers</h4>
+              <p class="text-tiny text-bodyLight">Hello, Mark! I am writing to in...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div class="relative">
+              <img src="./img/7.png" alt="managers">
+              <span class="online-dot"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">#Designers</h4>
+              <p class="text-tiny text-bodyLight">Hello. Can you drop the phot...</p>
+              <div class="absolute badge text-white badge-roster">
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div><!--People-->
+          <div class="flex justify-between pl-6 pr-5 h-rosterPeople">
+            <h3 class="uppercase text-bodyLight mt-4">People</h3>
+            <div class="cursor-pointer mt-4 -mr-px">
+              <img src="./img/Plus.png" alt="plus">
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div class="relative">
+              <img src="./img/1.png" alt="avatar">
+              <span class="online-dot"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Dustin Williamson</h4>
+              <p class="text-tiny text-bodyLight">Hello, Mark! I am writing to in...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div>
+              <img src="./img/3.png" alt="avatar">
+              <span class="online-dot hidden"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Jane Wilson</h4>
+              <p class="text-tiny text-bodyLight">We use the Arts as a means...</p>
+              <div class="absolute badge text-white badge-roster">
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div class="relative">
+              <img src="./img/2.png" alt="avatar">
+              <span class="online-dot"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Regina Cooper</h4>
+              <p class="text-tiny text-bodyLight">The Arts play a large role in...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div class="relative">
+              <img src="./img/4.png" alt="avatar">
+              <span class="online-dot"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Brandon Pena</h4>
+              <p class="text-tiny text-bodyLight">The arts allow us to be as sp...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div>
+              <img src="./img/5.png" alt="avatar">
+              <span class="online-dot hidden"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Jacob Hawkins</h4>
+              <p class="text-tiny text-bodyLight">From dance and music to a...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div class="relative">
+              <img src="./img/6.png" alt="avatar">
+              <span class="online-dot"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Shane Black</h4>
+              <p class="text-tiny text-bodyLight">The arts teach us how to co...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div class="relative">
+              <img src="./img/2.png" alt="avatar">
+              <span class="online-dot"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Priscilla Edwards</h4>
+              <p class="text-tiny text-bodyLight">Concept of life is shown thro...</p>
+            </div>
+          </div>
+
+          <div class="relative p-6 flex border-b border-borderColor h-25">
+            <div>
+              <img src="./img/3.png" alt="avatar">
+              <span class="online-dot hidden"></span>
+            </div>
+            <div class="flex flex-col pl-4 justify-center">
+              <h4 class="text-heading">Jane Black</h4>
+              <p class="text-tiny text-bodyLight">We use the Arts as a means...</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <main class="flex-grow relative" id="thirdCol"><!--third col-->
+          <div class="md:hidden p-4 cursor-pointer" id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </div>
+          <div class="relative border-b border-borderColor h-20 py-3.5 pl-7.5 pr-7 flex justify-between mb-px"><!--Header chat-->
+            <div class="flex items-center">
+              <div class="relative">
+                <img src="./img/3.png" alt="avatar" class="">
+                <span class="online-dot"></span>
+              </div>
+              <h4 class="text-heading ml-4">Jane Wilson</h4>
+            </div>
+            <div class="flex items-center">
+              <div>
+                <img src="./img/Plus.png" alt="plus">
+              </div>
+              <div class="ml-7">
+                <img src="./img/More.png" alt="more">
+              </div>
+            </div>
+          </div>
+          <div class="pt-px relative"><!--Chat-->
+            <div class="flex pt-5.5 pl-7.5">
+
+                <div class="">
+                  <div class="flex items-center">
+                    <div class="relative self-end">
+                      <img src="./img/3.png" alt="avatar">
+                      <span class="online-dot hidden"></span>
+                    </div>
+                    <div class="bg-accent flex py-4.5 px-5 rounded-t-lg rounded-br-lg overflow-hidden ml-2">
+                      <p class="text-white">Hi Cody, any progress on the project?</p>
+                      <img src="./img/Happy3.png" alt="happy" class="mr-1.5 ml-px">
+                    </div>
+                    <div class="ml-3.5">
+                        <img src="./img/More.png" alt="more">
+                    </div>
+                  </div>
+                  <div class="flex justify-end pr-9 text-service text-bodyLight mt-1">
+                    <p>1 day ago</p>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex pt-6 pr-7.5 justify-end mb-px">
+
+              <div class="mt-px pt-px max-w-full">
+
+                  <div class="flex items-center">
+                    <div class="mr-3.5">
+                        <img src="./img/More.png" alt="more">
+                    </div>
+                    <div class="bg-chatAnswerColor text-bodyDark py-4.5 pl-5 pr-6 rounded-t-lg rounded-bl-lg overflow-hidden mr-2">
+                      <p>Hi Jane!</p>
+                      <p>Yes. I just finished developing the "Chat" template.</p>
+                    </div>
+                    <div class="relative self-end">
+                      <img src="./img/6.png" alt="avatar">
+                      <span class="online-dot hidden"></span>
+                    </div>
+                  </div>
+                  <div class="flex pl-9 text-service text-bodyLight">
+                    <p class="pt-1 mr-px">1 day ago</p>
+                    <div class="flex pl-11 flex-wrap items-center mt-4">
+                      <img src="./img/Attachment1.png" alt="sea" class="pr-4">
+                      <img src="./img/Attachment2.png" alt="tile" class="pr-4">
+                      <img src="./img/Attachment3.png" alt="sand" class="pr-4">
+                      <div class=" flex w-12 h-12 bg-chatAnswerColor text-accent text-chat font-medium items-center justify-center pt-1 pr-1">
+                        <span>+</span><span>3</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex pt-5.5 pl-7.5">
+
+                <div class="">
+                  <div class="flex items-center">
+                    <div class="relative self-end">
+                      <img src="./img/3.png" alt="avatar">
+                      <span class="online-dot hidden"></span>
+                    </div>
+                    <div class="bg-accent text-white py-4.5 px-5 rounded-t-lg rounded-br-lg overflow-hidden ml-2">
+                      <div class="flex">
+                        <p class="text-white">It looks amazing.</p>
+                        <img src="./img/Nerd.png" alt="happy" class="mx-1.5">
+                      </div>
+                      <div>
+                        <p>The customer will be very satisfied.</p>
+                      </div>
+                    </div>
+                    <div class="ml-3.5">
+                        <img src="./img/More.png" alt="more">
+                    </div>
+                  </div>
+                  <div class="flex justify-end pr-9 text-service text-bodyLight mt-1">
+                    <p>1 day ago</p>
+                  </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="flex pt-6 pr-7.5 justify-end mb-px">
+
+              <div class="mt-px pt-px">
+
+                  <div class="flex items-center">
+                    <div class="mr-3.5">
+                        <img src="./img/Edit.png" alt="more">
+                    </div>
+                    <div class="mr-3.5">
+                        <img src="./img/Delete.png" alt="more">
+                    </div>
+                    <div class="bg-chatAnswerColor text-bodyDark py-4.5 pl-5 pr-6 rounded-t-lg rounded-bl-lg overflow-hidden mr-2">
+                      <p>Thank you, glad you liked it.</p>
+                      <p>Send me Styles Guide.</p>
+                    </div>
+                    <div class="relative self-end">
+                      <img src="./img/6.png" alt="avatar">
+                      <span class="online-dot hidden"></span>
+                    </div>
+                  </div>
+                  <div class="flex pl-9 ml-9 text-service text-bodyLight">
+                    <p class="pt-1 mr-px">1 day ago</p>
+                  </div>
+                </div>
+
+            </div> -->
+<!--grid-->
+            <div class="flex pt-6 pr-7.5 justify-end mb-px">
+
+              <div class="mt-px pt-px">
+
+                <div class="grid grid-cols-2auto">
+                  <div class="flex items-center justify-end">
+                    <div class="mr-3.5">
+                        <img src="./img/Edit.png" alt="more">
+                    </div>
+                    <div class="mr-3.5">
+                        <img src="./img/Delete.png" alt="more">
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="flex">
+                      <div class="bg-chatAnswerColor text-bodyDark py-4.5 pl-5 pr-6 rounded-t-lg rounded-bl-lg overflow-hidden mr-2">
+                        <p>Thank you, glad you liked it.</p>
+                        <p>Send me Styles Guide.</p>
+                      </div>
+                      <div class="relative self-end">
+                        <img src="./img/6.png" alt="avatar">
+                        <span class="online-dot hidden"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                  <div class="flex text-service text-bodyLight">
+                    <p class="pt-1 mr-px">1 day ago</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="flex items-center mx-4 px-3.5 pt-7 pb-3.5 mb-px text-tiny justify-center"><!--Today-->
+              <div class="left-line w-full h-px bg-borderColor"></div>
+              <div class="px-5 text-bodyLight">Today</div>
+              <div class="right-line w-full h-px bg-borderColor"></div>
+            </div>
+
+            <div class="flex pt-5.5 pl-7.5">
+
+                <div class="">
+                  <div class="flex items-center">
+                    <div class="relative self-end">
+                      <img src="./img/3.png" alt="avatar">
+                      <span class="online-dot hidden"></span>
+                    </div>
+                    <div class="bg-chatAnswerColor text-white pt-4.5  rounded-t-lg rounded-br-lg overflow-hidden ml-2">
+                      <div class="px-5 pb-5 mr-12">
+                        <div class="flex">
+                          <p class="text-heading pb-1">Brand Styles Guide.pdf</p>
+                        </div>
+                        <div class="flex">
+                          <p class="text-accent">487 KB</p>
+                        </div>
+                      </div>
+                      <div class="bg-accent flex pb-3 px-5 pt-2.5 mt-px justify-between">
+                        <p>Download</p>
+                        <img src="./img/Download.png" alt="download">
+                      </div>
+                    </div>
+                    <div class="ml-3.5">
+                        <img src="./img/More.png" alt="more">
+                    </div>
+                  </div>
+                  <div class="flex justify-end pr-9 text-service text-bodyLight mt-1">
+                    <p>2 min ago</p>
+                  </div>
+                </div>
+
+            </div>
+            
+            <div class="flex pt-6 pr-7.5 justify-end mb-px">
+
+              <div class="">
+
+                <div class="grid grid-cols-2auto">
+                  <div class="flex items-center justify-end">
+                    <div class="mr-3.5">
+                        <img src="./img/More.png" alt="more">
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="flex">
+                      <div class="bg-chatAnswerColor text-bodyDark py-4.5 pl-5 pr-5 rounded-t-lg rounded-bl-lg overflow-hidden mr-2">
+                        <p>I'll see later</p>
+                      </div>
+                      <div class="relative self-end">
+                        <img src="./img/6.png" alt="avatar">
+                        <span class="online-dot hidden"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                  <div class="flex text-service text-bodyLight">
+                    <p class="pt-1 mr-px">1 min ago</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="flex justify-between items-center w-full mt-10 pt-2.5  pl-7.5 pr-2.5 border-t border-borderColor"><!--Footer chat (write message)-->
+              <div class="flex items-center w-full">
+                <div class="pr-3.5">
+                  <img src="./img/clip.png" alt="clip">
+                </div>
+                <div >
+                  <img src="./img/Smile.png" alt="smile">
+                </div>
+                <div class="pl-5.5 w-4/5">
+                  <input class="w-full" type="text" placeholder="Type a message here...">
+                </div>
+              </div>
+              <div class="bg-accent h-14 w-14 flex justify-center items-center">
+                <img src="./img/Send.png" alt="send">
+              </div>
+            </div>
+          </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

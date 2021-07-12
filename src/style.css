@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.badge {
+  @apply flex items-center text-tiny font-medium bg-primary;
+  padding-left: 5px;
+}
+
+.badge-nav-position {
+  @apply border-4 border-solid rounded border-accent;
+  top: 16%;
+  right: 23%;
+  width: 29px;
+  height: 29px;
+}
+
+.badge-roster {
+  width: 21px;
+  height: 21px;
+  right: 23px;
+  top: 39px;
+}
+
+.search {
+  top: 30px;
+  left: 22px;
+}
+
+.online-dot {
+  @apply bg-greenOnline border-solid border-white border-3 absolute rounded-full;
+  width: 14px;
+  height: 14px;
+  right: -3px;
+  bottom: -4px;
+}
+
+.left-line {
+  max-width: 375px;
+}
+
+.right-line {
+  max-width: 389px;
+}
